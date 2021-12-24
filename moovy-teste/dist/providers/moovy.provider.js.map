@@ -1,0 +1,1 @@
+{"version":3,"file":"moovy.provider.js","sourceRoot":"","sources":["../../src/providers/moovy.provider.ts"],"names":[],"mappings":";;;AACA,yDAAgD;AAGnC,QAAA,aAAa,GAAe;IACrC;QACI,OAAO,EAAE,kBAAkB;QAC3B,UAAU,EAAE,CAAC,UAAsB,EAAE,EAAE,CACnC,UAAU,CAAC,aAAa,CAAC,oBAAK,CAAC;QACnC,MAAM,EAAE,CAAC,qBAAqB,CAAC;KAClC;CACJ,CAAC"}

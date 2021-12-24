@@ -1,0 +1,79 @@
+body {
+  background: #DCE0E2;
+}
+
+.image-container{
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container:hover .overlay{
+  opacity: 1;
+}
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  align-self: center;
+  transition: 0.5s ease;
+  opacity: 0;
+  bottom: 0;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+.name-container{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6); 
+  width: 100%;
+  transition: 0.5s ease;
+  bottom: 0;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  border-radius: 15px;
+}
+
+.image-container:hover .name-container{
+  opacity: 0;
+}
+
+.remove-button{
+  background: rgba(255, 0, 0, 0.6); 
+  color: rgb(255, 255, 255);
+}
+
+.add-button{
+  background: rgba(41, 110, 38, 0.6); 
+  color: rgb(255, 255, 255);
+}
+
+.review{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  align-self: center;
+  transition: 0.5s ease;
+  padding: 30px;
+  text-align: center;
+  background: rgba(57, 16, 122, 0.8); 
+}
+
+.navheader{        
+  margin-top: 15px;     
+  font-size: 18px;       
+  color :black !important;        
+  background-color: #b3beca!important        
+}     
+.btnspace    
+{    
+margin: 15px; 
+}   
