@@ -59,12 +59,12 @@ body {
 .review{
   position: absolute;
   width: 100%;
-  top: 0;
+  bottom: 100px;
   align-self: center;
   transition: 0.5s ease;
   padding: 30px;
   text-align: center;
-  background: rgba(57, 16, 122, 0.8); 
+  opacity: 0.6;
 }
 
 .navheader{        

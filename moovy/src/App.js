@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Component } from "react";
 import Toastr from "./components/Toastr";
 
 import './App.css'
@@ -104,6 +104,7 @@ const App = () => {
       movies = {favorites}
       handleFavoritesClick = {removeFavoriteMovie}
       favoriteComponent = {RemoveFavorites}
+      addReview = {AddReview}
       />
     </div>
   </div>
