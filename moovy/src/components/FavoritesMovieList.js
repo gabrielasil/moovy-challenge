@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react/cjs/react.development';
+import { Howl } from 'howler';
 
-const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick}) => {
+const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick, addReview}) => {
     const FavoriteComponent = favoriteComponent;
+    const AddReview = addReview;
     const [localMovies, setLocalMovies] = useState([]);
 
 
@@ -30,8 +32,11 @@ const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick}) =
                     
                     <FavoriteComponent/>
                     
-
                     </div>
+                    <div className ='overlay d-flex align-items-center justify-content-center'>
+                        {<AddReview/>}
+                    </div>
+                    
                 </div>
             ))}
         </>

@@ -5,5 +5,6 @@ import { Entity, PrimaryGeneratedColumn, Column, PrimaryColumn} from "typeorm";
 export class Moovy {
     @PrimaryColumn()
     movieID: string;
+
 }
    

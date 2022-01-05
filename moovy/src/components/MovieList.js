@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react/cjs/react.development';
 
+
 const MovieList = ({favoriteComponent, movies, handleFavoritesClick}) => {
     const FavoriteComponent = favoriteComponent;
     const [localMovies, setLocalMovies] = useState([]);
