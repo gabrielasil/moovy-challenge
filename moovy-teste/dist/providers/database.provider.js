@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.databaseProvider = void 0;
 const moovy_entity_1 = require("../entity/moovy.entity");
+const review_entity_1 = require("../entity/review.entity");
 const typeorm_1 = require("typeorm");
 exports.databaseProvider = [
     {
@@ -13,7 +14,7 @@ exports.databaseProvider = [
             username: 'rahndoml',
             password: '3M9tmmW7CGSTiVhRBNIlhjg0g74nzc9o',
             database: 'rahndoml',
-            entities: [moovy_entity_1.Moovy],
+            entities: [moovy_entity_1.Moovy, review_entity_1.Review],
             synchronize: true,
         }),
     },

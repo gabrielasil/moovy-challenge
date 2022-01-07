@@ -29,6 +29,17 @@ body {
   border-radius: 25px;
 }
 
+.add-container{
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  align-self: center;
+  transition: 0.5s ease;
+  padding: 30px;
+  text-align: center;
+  opacity: 0.6;
+}
+
 .name-container{
   position: absolute;
   background: rgba(0, 0, 0, 0.6); 
@@ -77,3 +88,10 @@ body {
 {    
 margin: 15px; 
 }   
+
+.nav-components{
+  padding-left: 10%;
+  text-decoration: none;
+  font-size: larger;
+  color: #F2911B;
+}

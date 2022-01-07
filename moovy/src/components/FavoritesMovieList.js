@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react/cjs/react.development';
-import { Howl } from 'howler';
+import {useStateIfMounted} from "use-state-if-mounted";
 
-const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick, addReview}) => {
+const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick, playReview, addReview, reviews}) => {
     const FavoriteComponent = favoriteComponent;
+    const PlayReview = playReview;
     const AddReview = addReview;
-    const [localMovies, setLocalMovies] = useState([]);
-
-
+    const [localMovies, setLocalMovies] = useStateIfMounted([]);
     useEffect(() => {
         const promises = movies.map(async (movie)=> {
             const url = `https://www.omdbapi.com/?i=${movie.movieID}&apikey=201f1cda` //template string
@@ -18,7 +17,7 @@ const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick, ad
         Promise.all(promises).then(setLocalMovies);
 
       }, [movies]);
-    
+      
     return (
         <>
             {localMovies.map((movie, index)=> (
@@ -33,9 +32,13 @@ const FavoritesMovieList = ({favoriteComponent, movies, handleFavoritesClick, ad
                     <FavoriteComponent/>
                     
                     </div>
-                    <div className ='overlay d-flex align-items-center justify-content-center'>
-                        {<AddReview/>}
-                    </div>
+                    {/*<div className ='overlay d-flex align-items-center justify-content-center'>
+                        {<PlayReview
+                            reviews = {reviews}
+                            isReview = {movies[index].isReview}
+                        />}
+                        </div>*/}
+                        
                     
                 </div>
             ))}

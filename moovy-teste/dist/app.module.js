@@ -12,16 +12,20 @@ const core_1 = require("@nestjs/core");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const movies_module_1 = require("./movies/movies.module");
-const product_module_1 = require("./products/product.module");
+const reviews_module_1 = require("./movies/reviews.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
-        imports: [product_module_1.ProductsModule, movies_module_1.MoviesModule,
+        imports: [movies_module_1.MoviesModule, reviews_module_1.ReviewsModule,
             core_1.RouterModule.register([{
                     path: 'api/moovy',
-                    module: movies_module_1.MoviesModule,
+                    module: movies_module_1.MoviesModule
                 },
+                {
+                    path: 'api/reviews',
+                    module: reviews_module_1.ReviewsModule
+                }
             ]),
         ],
         controllers: [app_controller_1.AppController],

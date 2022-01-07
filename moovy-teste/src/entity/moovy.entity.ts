@@ -6,5 +6,8 @@ export class Moovy {
     @PrimaryColumn()
     movieID: string;
 
+    @Column()
+    isReview: boolean;
+
 }
    

@@ -1,29 +1,13 @@
-import React, { Component } from "react";
-import { Howl } from 'howler';
+import React from "react";
 
-const audioClip = "http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a";
-
-class AddReview extends Component{
-    soundPlay = (src) => {
-        const sound = new Howl ({
-            src,
-            html5: true
-        })
-        sound.play();
-    }
-    render(){
-        return(
-            <>
-                <div className="review" onClick={() => this.soundPlay(audioClip)}><span className="mr-2"> 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" fill="white">
-            <polygon className="play-btn__svg" points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69"/>
-            <path className="play-btn__svg" d="M26,13A13,13,0,1,1,13,0,13,13,0,0,1,26,13ZM13,2.18A10.89,10.89,0,1,0,23.84,13.06,10.89,10.89,0,0,0,13,2.18Z"/>
-            </svg> </span></div>
-            </>
-        )
-    }
-}
-
-//onclick={SoundPlayer.playUrl('http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a')}
+const AddReview = () => {
+    return (
+        <>
+            <div className="add-button add-container"><span className='mr-2'> <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-bookmark" viewBox="0 0 16 16">
+  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+</svg>Add Review</span></div>
+        </>
+    );
+};
 
 export default AddReview;

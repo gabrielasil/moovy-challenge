@@ -17,6 +17,10 @@ __decorate([
     (0, typeorm_1.PrimaryColumn)(),
     __metadata("design:type", String)
 ], Moovy.prototype, "movieID", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", Boolean)
+], Moovy.prototype, "isReview", void 0);
 Moovy = __decorate([
     (0, typeorm_1.Entity)()
 ], Moovy);

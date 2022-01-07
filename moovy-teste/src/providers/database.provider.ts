@@ -1,4 +1,5 @@
 import { Moovy } from "src/entity/moovy.entity";
+import { Review } from "src/entity/review.entity";
 import { createConnection } from "typeorm"
 
 export const databaseProvider = [
@@ -12,7 +13,7 @@ export const databaseProvider = [
                 username: 'rahndoml',
                 password: '3M9tmmW7CGSTiVhRBNIlhjg0g74nzc9o',
                 database: 'rahndoml', //information from ElephantSQL
-                entities: [Moovy],
+                entities: [Moovy, Review],
                 synchronize: true,
             }),
     },

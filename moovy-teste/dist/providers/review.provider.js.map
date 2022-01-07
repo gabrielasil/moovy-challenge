@@ -1,0 +1,1 @@
+{"version":3,"file":"review.provider.js","sourceRoot":"","sources":["../../src/providers/review.provider.ts"],"names":[],"mappings":";;;AACA,2DAAiD;AAGpC,QAAA,cAAc,GAAe;IACtC;QACI,OAAO,EAAE,mBAAmB;QAC5B,UAAU,EAAE,CAAC,UAAsB,EAAE,EAAE,CACnC,UAAU,CAAC,aAAa,CAAC,sBAAM,CAAC;QACpC,MAAM,EAAE,CAAC,qBAAqB,CAAC;KAClC;CACJ,CAAC"}
